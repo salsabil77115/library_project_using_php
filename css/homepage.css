@@ -1,0 +1,101 @@
+
+
+
+body{
+  background-image:url(../image/B.jpeg) ;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  position: relative;
+
+
+}
+p.x{
+  font-size:55px;
+  text-align:center;
+  height:60px;
+  width:72.75%;
+  margin-left: 130px;
+  border:0px solid white;
+  padding:0px;
+  text-shadow:2px 2px white
+}
+button.x{
+  margin-left: 500px;
+  padding: 20px;
+      background-color:  #f1eb90;
+font-size: 20px;
+font-weight: bold;
+border-color: black;
+    border-radius: 10px
+
+  }
+
+button.y{
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 20px;
+font-weight: bold;
+border-color: black;
+      background-color:  #f1eb90;
+        border-radius: 10px
+
+}
+
+
+
+
+
+ul {
+  list-style-type:  none;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+
+}
+
+li {
+  float: left;
+  border: black;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+li a:hover:not(.active) {
+  border-bottom: 3px solid white;
+
+  background-color:#f1eb90;
+}
+
+li a.active {
+  border-bottom: 3px solid white;
+
+  color: white;
+  background-color:#f1eb90;
+}
+.about1 span{
+
+  color: black;
+   font-size: 20px; 
+   margin-left: 10px;
+   font-weight: bold;
+}
+.about1 p{
+font-size: 40px;
+color: rgb(226, 214, 40);
+
+}
+
+

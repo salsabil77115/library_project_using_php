@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>University Library Management</title>
+        <link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+    </head>
+
+<body>
+<p>
+    <img src="image/logo.png" title="logo">
+
+    <ul>
+ 
+        <li><a class="active" href="#">Home</a></li>
+        <li><a onclick="load1()">Our goals</a></li>
+        <li><a href="#Services">Services</a></li>
+
+        <li><a onclick="load()">About Us</a></li>
+        <li><a onclick="load2()" >Contact Us</a></li>
+        
+      </ul>
+      <p class="x">University Library Management</p>
+      </p>
+<br><br><br>
+
+        <button class="x" onclick="location.href='studentSignUp.html'">Sign UP</button>
+    <button  class="y"onclick="loadDoc()">Log IN</button>
+     <br>
+    <br>
+    <br>
+    <br>
+    <div id="about1">
+        
+    </div>
+<script>
+function loadDoc() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "log.html", true);
+xhttp.send();
+}
+function load() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "about.html", true);
+xhttp.send();
+}
+function load1() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "goals.html", true);
+xhttp.send();
+}
+function load2() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "contact.html", true);
+xhttp.send();
+}
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,135 @@
+
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="css\StudentSignUp.css">
+
+    </head>
+
+<body>
+    <p><img src="image\logo.png" title="logo">
+
+        <ul>
+     
+            <li><a class="active" href="homepage.html">Home</a></li>
+            <li><a onclick="load1()">Our goals</a></li>
+            <li><a href="#Services">Services</a></li>
+    
+            <li><a onclick="load()">About Us</a></li>
+            <li><a onclick="load2()" >Contact Us</a></li>
+            
+          </ul>
+          </p>
+     
+    <center>
+        <form action="studentSignUp.php" method="post" onsubmit="return checkform(this)">
+       
+          <label >FirstName</label> 
+           <input type="text"  required minlength="5" maxlength="10" name="first"> 
+
+           <label >lastName</label>
+           <input type="text"  required minlength="5" maxlength="10" name="last"> 
+       
+            <label >Email</label>  
+                <input type="email" required name="email">
+       
+           <label >ID</label> 
+            <input type="number" required  name="id">
+          <label >Phone</label> 
+           <input type="text" name="phone">
+            <label >password</label>
+            <input type="password" required name="pwd1">
+            <label >confirm password</label> 
+            <input type="password" id="pwd2">
+            <br>
+             
+            <br>
+            <br>
+            <button type="submit"  >Submit</button>
+          
+            <button type="reset">Reset</button>
+        </form>
+                                </center>
+                                <div id="about1">
+              
+                                </div>
+          <script>       
+                        
+
+                               
+         function checkForm(form) {
+pwd2=form.name.value;
+ pwd1=form.pwd1.value;
+    
+
+    if (pwd1!= "" && pwd1 ==pwd2) {
+        if (pwd1.length < 6) {
+            alert("Error: Password must contain at least six characters!");
+            pwd1.focus();
+            return false;
+        }
+     
+        re = /[0-9]/;
+        if (!re.test(pwd1)) {
+
+            alert("Error: password must contain at least one number (0-9)!");
+            pwd1.focus();
+            return false;
+        }
+        re = /[a-z]/;
+        if (!re.test(pwd1)) {
+            alert("Error: password must contain at least one character (a-z)!");
+            pwd1.focus();
+            return false;
+        }
+
+
+    } else {
+        alert("Error: Please check that you've entered and confirmed your password!");
+        pwd1.focus();
+        return false;
+    }
+
+    alert("You entered a valid password: " + pwd1);
+    return true;
+}
+
+function load() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "about.html", true);
+xhttp.send();
+}
+function load1() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "goals.html", true);
+xhttp.send();
+}
+function load2() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "contact.html", true);
+xhttp.send();
+}
+                                </script>    
+                              
+</body>
+
+
+</html>

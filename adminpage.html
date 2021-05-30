@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>Welcome Admin</title>
+        <link rel="stylesheet" type="text/css" href="css\adminpage.css">
+
+    </head>
+
+<body>
+   
+  <p> <img src="logo.png" title="logo">
+    <ul>
+           <li><a class="active" href="adminpage.html" >Home</a></li> 
+           <li><a onclick="load()">About Us</a></li>
+           <li><a href="update admin.html" >Updating info</a></li> 
+           <li><a href="php\Browse.php">Browsing</a></li>
+           <li><a href="Add.html">Add Book</a></li>
+           <li><a href="Update book.html">Updating a book details</a></li> 
+            <li><a href="homepage.html">Log out</a>  </li>   
+        </ul>
+        </p>
+  <br>
+  <div id="about1">
+
+  </div>
+  <div class="row">
+
+    <div class="colomn">
+      <a target="_blank" href="b1.jpg">
+        <img src="b1.jpg" alt="Educational Research" title="Educational Research"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+
+    
+    <div class="colomn">
+      <a target="_blank" href="b2.png">
+        <img src="b2.png" alt="Merrivale Academic college" title="Merrivale Academic college" style="  width: 200px;
+        height: 200px;" >
+      </a>
+    </div>
+    
+    <div class="colomn">
+
+  
+      <a target="_blank" href="b3.jpg">
+        <img src="b3.jpg" alt="Professional English" title="Professional English" style="  width: 200px;
+        height: 200px;" >
+      </a>
+      
+    </div>
+    <div class="colomn">
+
+    
+      <a target="_blank" href="b4.jpg">
+        <img src="b4.jpg" alt="Physics" title="Physics"style=" width: 200px;
+        height: 200px;">
+      </a>
+    
+    </div>
+    
+    <div class="colomn">
+
+
+      <a target="_blank" href="b5.jpg">
+        <img src="b5.jpg" alt="Statistics" title="Statistics" style="  width: 200px;
+        height: 200px;">
+      </a>
+</div>
+<div class="colomn">
+<a target="_blank" href="b6.jpg">
+<img src="b6.jpg" alt="Deep history" title="Deep history"style="  width: 200px;
+height: 200px;">
+</a>
+</div>
+
+
+<div class="colomn">
+<a target="_blank" href="b7.png">
+<img src="b7.jpg" alt="college accounting" title="college accounting"style="  width: 200px;
+height: 200px;" >
+</a>
+</div>
+
+<div class="colomn">
+
+
+<a target="_blank" href="b8.jpg">
+<img src="b8.jpg" alt="Degital system engineering"title="Degital system engineering" style="  width: 200px;
+height: 200px;" >
+</a>
+
+</div>
+<div class="colomn">
+
+
+<a target="_blank" href="b9.jpg">
+<img src="b9.jpg" alt="Biology" title="Biology"style="  width: 200px;
+height: 200px;">
+</a>
+
+</div>
+
+<div class="colomn">
+
+
+<a target="_blank" href="b10.jpg">
+<img src="b10.jpg" alt="Regions" title="Regions"style="  width: 200px;
+height: 200px;">
+</a>
+</div>
+<div class="colomn">
+
+
+<a target="_blank" href="b11.jpg">
+<img src="b11.jpg" alt="Cognitive Robotics"title="Cognitive Robotics" style="  width: 200px;
+height: 200px;">
+</a>
+</div>
+
+    <div class="colomn">
+      <a target="_blank" href="b12.jpg">
+        <img src="b12.jpg" alt="Educational Research" title="Educational Research"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+
+    <div class="colomn">
+      <a target="_blank" href="b13.jpg">
+        <img src="b13.jpg" alt="Educational Research" title="Educational Research"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+    <div class="colomn">
+      <a target="_blank" href="b14.jpg">
+        <img src="b14.jpg" alt="Annual report" title="Annual report"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+    <div class="colomn">
+      <a target="_blank" href="b15.png">
+        <img src="b15.png" alt="Annual report" title="Annual report"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+    <div class="colomn">
+      <a target="_blank" href="b16.jpg">
+        <img src="b16.jpg" alt="Annual report" title="Annual report"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+    <div class="colomn">
+      <a target="_blank" href="b17.jpg">
+        <img src="b17.jpg" alt="Annual report" title="Annual report"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+    <div class="colomn">
+      <a target="_blank" href="b18.jpg">
+        <img src="b18.jpg" alt="Annual report" title="Annual report"style="  width: 200px;
+        height: 200px;">
+      </a>
+    </div>
+</div>
+
+<script>
+  function load() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("about1").innerHTML =
+this.responseText;
+}
+};
+xhttp.open("GET", "about.html", true);
+xhttp.send();
+}
+</script>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,121 @@
+<html>
+   <head>
+      <title>Extend period</title>
+   </head>
+   <body>
+ 
+      <style>
+   
+label{
+   color:white;
+ font-size: 20px;
+
+
+}
+input{
+
+   background-color: wheat;
+     border-radius: 5px;
+     padding: 5px;
+     border-color: black;
+
+ 
+
+
+}
+button{
+   border-color: black;
+   border-radius: 5px;
+              padding: 10px;
+              font-weight:  bold;
+              background-color: wheat;
+              margin-left: 10px;
+}
+body{background-image:url(Browse.jpeg);
+   min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  position: relative;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: black;
+
+}
+
+li {
+  float: left;
+  border: black;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+li a:hover:not(.active) {
+  border-bottom: 3px solid white;
+
+  background-color:#f1eb90;
+}
+
+li a.active {
+  border-bottom: 3px solid white;
+
+  color: white;
+  background-color:#f1eb90;
+}
+      </style>
+    <p><img src="logo.png" title="logo">
+      <ul>
+  
+        <li><a class="active" href="studentPage.html">Home</a></li>
+        <li><a onclick="load()">About Us</a></li>
+        <li><a href="update student.html" >Updating Details</a></li>
+         <li><a href="Browse.php">Browsing</a></li>
+         <li><a href="filter.html">fiter</a></li>
+  
+         <li><a href="borrow.html">Borrow</a></li>
+         <li><a href="return.php">return</a></li>
+         <li><a href="extend.html">extendperiod</a></li>
+  
+        <li><a href="homepage.html">Log Out</a>  </li>  
+    
+  
+      </ul>
+      </p>
+      <center>
+         <form  method="POST"action="extendperiod.php" >
+             <label >Name of Book</label><br>
+            
+            
+             <input type="text" name="x"> 
+  <br>
+  <label >Your Email</label><br>
+         
+             
+             <input type="email" name="y"> 
+             
+<br>
+
+             <label >Due Date</label><br>
+            
+                        
+                        <input type="date" name="z"> 
+  <br>  
+  <br>
+
+              <button type="submit"  >Extend</button>
+        
+           </form>
+      </center>
+</body>
+</html>

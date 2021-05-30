@@ -1,0 +1,137 @@
+
+<html>
+    <head>
+        <title>Add Books</title>
+        
+<style>
+
+body{
+    background-image:url(image\s.jpeg) ;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    position: relative;
+  
+  }
+
+            input{
+                
+              display: block;
+            
+                
+        background-color: wheat;
+               border-radius: 5px;
+                padding: 5px;
+                border-color: black;
+
+            }
+             button{
+               border-radius: 5px;
+               border-color: black;
+                padding: 10px;
+                font-weight:  bold;
+                background-color: wheat;
+                margin-left: 30px;
+            }
+label{
+    color:white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+ul {
+              list-style-type: none;
+              padding: 0;
+              overflow: hidden;
+              border-radius: 10px;
+              border: black;
+            
+            }
+            
+            li {
+              float: left;
+              border: black;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 25px;
+            }
+            
+li a:hover:not(.active) {
+  border-bottom: 3px solid white;
+
+  background-color:#f1eb90;
+}
+
+li a.active {
+  border-bottom: 3px solid white;
+
+  color: white;
+  background-color:#f1eb90;
+}
+
+</style>
+    </head>
+
+<body>
+    <p> <img src="logo.png" title="logo">
+        <ul>
+               <li><a class="active" href="adminpage.html" >Home</a></li> 
+               <li><a onclick="load()">About Us</a></li>
+               <li><a href="update admin.html" >Updating admin details</a></li> 
+               <li><a href="php\Browse.php">Browsing</a></li>
+               <li><a href="Add.html">Add Book</a></li>
+               <li><a href="Update book.html">Updating a book details</a></li> 
+                <li><a href="firstPage.html">Log out</a>  </li>   
+            </ul>
+            </p>
+    <center >
+
+        <form action="add.php" method="post">
+       
+            <label>ISBN</label><br>
+            
+            <input type="number"  name="ISBN" > 
+            
+           <label>title</label><br>
+           
+           <input type="text"  name="title" > 
+
+           <label>author</label><br>
+        
+           <input type="text"  name="author" > 
+       
+            <label>publisher Year</label> 
+             <br>  
+        
+             <input type="text" name="publisher">
+       <br>
+
+           <label>number of copies</label>
+           <br>
+           
+           <input type="number" name="copies">
+           <br>
+           <label for="img">Select image:</label>
+           <br>
+        
+           <input type="file" id="img" name="img" accept="image/*">
+            <br>
+             
+            <br>
+            
+            <button type="submit" >Add</button>
+          
+        
+        </form>
+    </center>
+</body>
+
+
+</html>
+

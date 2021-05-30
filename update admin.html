@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update</title>
+        
+<style>
+
+body{
+    background-image:url(s.jpeg) ;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    position: relative;
+  
+  }
+  ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: black;
+
+}
+
+li {
+  float: left;
+  border: black;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+li a:hover:not(.active) {
+  border-bottom: 3px solid white;
+
+  background-color:#f1eb90;
+}
+
+li a.active {
+  border-bottom: 3px solid white;
+
+  color: white;
+  background-color:#f1eb90;
+}
+            input{
+                
+              display: block;
+            
+                
+        background-color: wheat;
+               border-radius: 5px;
+                padding: 5px;
+                border-color: black;
+
+            }
+             button{
+               border-radius: 5px;
+                padding: 10px;
+                font-weight:  bold;
+                background-color: wheat;
+                border-color: black;
+            }
+label{
+    color:white;
+    font-size: 20px;
+}
+
+</style>
+    </head>
+
+<body>
+    <p> <img src="logo.png" title="logo">
+        <ul>
+               <li><a class="active" href="adminpage.html" >Home</a></li> 
+               <li><a onclick="load()">About Us</a></li>
+               <li><a href="update admin.html" >Updating admin details</a></li> 
+               <li><a href="Browse.php">Browsing</a></li>
+               <li><a href="Add.html">Add Book</a></li>
+               <li><a href="Update book.html">Updating a book details</a></li> 
+                <li><a href="firstPage.html">Log out</a>  </li>   
+            </ul>
+            </p>
+    <center>
+        <form action="update admin.php" method="POST">
+       
+            <label style="font-size: 20px; color: aliceblue;">enter your ID</label> 
+             <input type="number" required  name="id">
+      
+ 
+            <label style="font-size: 20px; color: aliceblue;">Name</label>
+            <input type="text"  required minlength="5" maxlength="10" name="name"> 
+        
+             <label style="font-size: 20px; color: aliceblue;">Email</label>  
+                 <input type="email" required name="email">
+        
+           <label style="font-size: 20px; color: aliceblue;">Phone</label> 
+            <input type="text" name="phone">
+             <label style="font-size: 20px; color: aliceblue;">password</label>
+             <input type="password" required name="pwd1">
+            <br>
+             
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+          
+        
+        </form>
+                                </center>
+                  
+</body>
+
+
+</html>

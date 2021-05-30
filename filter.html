@@ -1,0 +1,205 @@
+<html>
+   <head>
+      <title>filter</title>
+   </head>
+   <body>
+  
+      <style>
+         p{
+font-size:30px;
+margin-left:10px;
+
+
+         }
+label{
+   color:black;
+ font-size: 20px;
+ margin-left: 60px;
+ margin-top: 60px;
+
+}
+input{
+
+   background-color: wheat;
+     border-radius: 5px;
+     padding: 5px;
+     margin-left: 20px;
+     margin-top: 60px;
+
+
+}
+button{
+   border-radius: 5px;
+              font-weight:  bold;
+              background-color: #f1eb90;
+              margin-left: 150px;
+              font-size: 20px;
+              border-color: black;
+}
+body{background-image:url(Browse.jpeg);
+   min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  position: relative;
+}
+table{margin-left:70px;
+    margin-top:100px;
+    color: black;
+font-size:20px;}
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: black;
+
+}
+
+li {
+  float: left;
+  border: black;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+li a:hover:not(.active) {
+  border-bottom: 3px solid white;
+
+  background-color:#f1eb90;
+}
+
+li a.active {
+  border-bottom: 3px solid white;
+
+  color: white;
+  background-color:#f1eb90;
+}
+.select-css {
+	font-size: 16px;
+	color: #444;
+	box-sizing: border-box;
+	border: 1px solid #f1eb90;
+	box-shadow: 0 1px 0 1px #f1eb90(0,0,0,.04);
+	border-radius: 5px;
+
+	background-color:#f1eb90;
+	
+}
+.select-css:hover {
+	border-color: #f1eb90;
+}
+.select-css:focus {
+	border-color: #f1eb90;
+	box-shadow: 0 0 1px 3px #f1eb90(59, 153, 252, .7);
+
+	color: #222;
+}
+
+      </style>
+    <p><img src="logo.png" title="logo">
+      <ul>
+  
+        <li><a class="active" href="studentPage.html">Home</a></li>
+        <li><a onclick="load()">About Us</a></li>
+        <li><a href="update student.html" >Updating Details</a></li>
+         <li><a href="Browse.php">Browsing</a></li>
+         <li><a href="filter.html">fiter</a></li>
+  
+         <li><a href="borrow.html">Borrow</a></li>
+         <li><a href="return.php">return</a></li>
+         <li><a href="extend.html">extendperiod</a></li>
+  
+        <li><a href="homepage.html">Log Out</a>  </li>  
+    
+  
+      </ul>
+      </p>
+  <form action="filter.php" method="POST">
+      <select name="ISBN" class="select-css">
+        <option value="">ISBN</option>
+
+        <option value="ISBN">1</option>
+        <option value="ISBN">2</option>
+        <option value="ISBN">3</option>
+        <option value="ISBN">4</option>
+        <option value="ISBN">5</option>
+        <option value="ISBN">6</option>
+        <option value="ISBN">7</option>
+        <option value="ISBN">8</option>
+        <option value="ISBN">9</option>
+        <option value="ISBN">10</option>
+        <option value="ISBN">11</option>
+        <option value="ISBN">12</option>
+        <option value="ISBN">13</option>
+      </select>
+   
+      <select name="author" class="select-css">
+        <option value="">author</option>
+
+        <option value="author">unknown</option>
+        <option value="author">Micheal van</option>
+        <option value="author">Ron Howard</option>
+        <option value="author">price Haddock brock </option>
+        <option value="author">john poulton</option>
+        <option value="author">Jan Nijman</option>
+        <option value="author">Hooman Samani</option>
+
+      </select>
+        <select name="title" class="select-css">
+            <option value="">title</option>
+
+            <option value="title">Educational Research</option>
+            <option value="title">Merrivale Academic c</option>
+            <option value="title">Professional English</option>
+            <option value="title">Physics</option>
+            <option value="title">Statistics</option>
+            <option value="title">Deep history</option>
+            <option value="title">college accounting</option>
+            <option value="title">Degital system engin</option>
+            <option value="title">Biology</option>
+            <option value="title">Regions</option>
+            <option value="title">Annual report</option>
+            <option value="title">Annual report2</option>
+
+        </select>
+     <select name="publisher_year"class="select-css" >
+        <option value="">publisher_year</option>
+
+         <option value="publisher_year">2003</option>
+         <option value="publisher_year">2015</option>
+         <option value="publisher_year">1999</option>
+         <option value="publisher_year">2000</option>
+         <option value="publisher_year">1910</option>
+         <option value="publisher_year">1998</option>
+         <option value="publisher_year">1997</option>
+         <option value="publisher_year">2008</option>
+         <option value="publisher_year">2005</option>
+         <option value="publisher_year">2009</option>
+         <option value="publisher_year">2015</option>      
+            <option value="publisher_year">2000</option>
+
+    </select>
+        <select name="num_of_copies" class="select-css">
+            <option value="num_of_copies">num_of_copies</option>
+            <option value="num_of_copies">1</option>
+        </select>
+      <br><br><br><br>
+        <button type="submit">filter</button>
+    </form>
+
+          
+</body>
+</html>
+
+
+
+
+
